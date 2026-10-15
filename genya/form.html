@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Attiva la prova gratuita – eLearning Academy Genya | Wolters Kluwer</title>
+<meta name="description" content="Richiedi il tuo mese di prova gratuita dell'eLearning Academy Wolters Kluwer.">
+<!-- BETA su GitHub Pages: non indicizzare. Togliere in Pardot se la pagina deve essere indicizzata. -->
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="../assets/img/wk-globe.png">
+<link rel="stylesheet" href="../assets/css/funnel.css">
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+<header class="hd"><div class="wrap">
+  <span class="logo-tab"><img src="../assets/img/wk-logo-stacked.png" alt="Wolters Kluwer" width="44" height="68"></span>
+  <span class="brand">eLearning Academy</span>
+</div></header>
+
+<main id="main" class="fp"><div class="wrap">
+  <h1>Attiva la tua prova gratuita</h1>
+  <p class="sub">Indicaci i tuoi dati: un consulente ti contatterà per attivare il tuo mese di eLearning Academy.</p>
+  <div class="fgrid">
+    <div class="form-area">
+<!-- ===================== PARDOT FORM: INIZIO ===================== -->
+<!-- In Pardot sostituire TUTTO questo blocco con il form Pardot
+     (codice iframe del form, oppure %%content%% nel layout template).
+     Campi: Nome, Cognome, Email, Cellulare + consensi privacy.
+     Campo nascosto consigliato: prodotto = "Genya".
+     Completion action del form: redirect a grazie.html di questo funnel. -->
+      <p class="beta-note">Versione di test: i dati non vengono inviati né salvati.</p>
+      <form class="f" id="trial-form" novalidate>
+        <input type="hidden" name="prodotto" value="Genya">
+        <p class="req">* Campo obbligatorio</p>
+        <label for="nome">Nome *</label>
+        <input type="text" id="nome" name="nome" autocomplete="given-name" required>
+        <label for="cognome">Cognome *</label>
+        <input type="text" id="cognome" name="cognome" autocomplete="family-name" required>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <label for="cell">Cellulare *</label>
+        <input type="tel" id="cell" name="cellulare" autocomplete="tel" placeholder="+391234567890" pattern="\+?[0-9 ]{8,16}" required aria-describedby="cell-hint">
+        <p class="hint" id="cell-hint">Inserisci il formato +391234567890</p>
+        <fieldset>
+          <legend>Invio di comunicazioni su prodotti Wolters Kluwer *</legend>
+          <div class="radios">
+            <label><input type="radio" name="consenso_com" value="si" required> Acconsento</label>
+            <label><input type="radio" name="consenso_com" value="no"> Non acconsento</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Personalizzazione delle offerte *</legend>
+          <div class="radios">
+            <label><input type="radio" name="consenso_prof" value="si" required> Acconsento</label>
+            <label><input type="radio" name="consenso_prof" value="no"> Non acconsento</label>
+          </div>
+        </fieldset>
+        <button type="submit">Invia la richiesta</button>
+        <p class="privacy">Inviando i dati acconsenti che Wolters Kluwer Italia S.r.l. utilizzi i tuoi dati personali secondo l'<a href="https://www.wolterskluwer.com/it-it/privacy-cookies" target="_blank" rel="noopener">informativa privacy</a>. Testo definitivo fornito dal form Pardot.</p>
+      </form>
+      <script>
+      // Solo per la beta: controlla i campi e passa alla pagina di ringraziamento senza inviare dati.
+      document.getElementById('trial-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (this.reportValidity()) window.location.href = 'grazie.html';
+      });
+      </script>
+<!-- ===================== PARDOT FORM: FINE ======================= -->
+    </div>
+    <aside class="side" aria-labelledby="dopo">
+      <h2 id="dopo">Cosa succede dopo</h2>
+      <ol class="steps">
+        <li class="step"><span class="n" aria-hidden="true">1</span><div><h3>Ricevi la nostra chiamata</h3><p>Un consulente ti contatta al numero che ci hai lasciato.</p></div></li>
+        <li class="step"><span class="n" aria-hidden="true">2</span><div><h3>Attiviamo il tuo accesso</h3><p>Ricevi le credenziali per entrare nell'Academy.</p></div></li>
+        <li class="step"><span class="n" aria-hidden="true">3</span><div><h3>Un mese tutto per te</h3><p>Video-pillole, webinar live e Academy Talks su Genya.</p></div></li>
+      </ol>
+      <p class="free">La prova è gratuita.</p>
+    </aside>
+  </div>
+</div></main>
+<footer class="ft"><div class="wrap">
+  <div class="bars" aria-hidden="true"><i class="bar-g"></i><i class="bar-r"></i></div>
+  <div class="row">
+    <div class="wk"><img src="../assets/img/wk-globe.png" alt="" width="26" height="26">Wolters Kluwer</div>
+    <div class="tag">When you have to be right</div>
+  </div>
+  <nav class="legal" aria-label="Note legali">
+    <a href="https://www.wolterskluwer.com/it-it/terms-of-use" target="_blank" rel="noopener">Condizioni di utilizzo</a>
+    <a href="https://www.wolterskluwer.com/it-it/privacy-cookies" target="_blank" rel="noopener">Privacy e Cookie</a>
+  </nav>
+  <div class="copy">© 2026 Wolters Kluwer N.V. e/o sue consociate. Tutti i diritti riservati.</div>
+</div></footer>
+</body>
+</html>
